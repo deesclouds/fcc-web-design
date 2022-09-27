@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div>
+    <header>
+        <h1 id="title">Survey Form by deesclouds</h1>
+        <p id="description">We appreciate you taking the time to help improve our platform.</p>
+    </header>
+
+        
+            <fieldset class="user-info">User Info</fieldset>
+<form method="get" id="survey-form">
+                    <label id="name-label">Name: <input class="info" type="text" id="name" required placeholder="First and Last Name"/></label>
+
+                    <label id="email-label">Email: <input class="info" type="email" id="email" required placeholder="user@mail.com"/></label>
+
+ <br>                   <label id="number-label">Age:  <input class="info age" type="number" id="number" name="age" min="13" max="120" required placeholder="Must be at least 13"/></label>
+        
+  <br>                  <label id="pronouns">How should we refer to you?
+                        <select id="dropdown">
+                            <option>(Pronouns)</option>
+                            <option>by name</option>
+                            <option>they/them/their</option>
+                            <option>she/her/hers</option>
+                            <option>he/him/his</option>
+                            <option>ze/zie/hir</option>
+                            <option>xe/xem/xyr</option>
+                            <option>per/per.pers</option>
+                            <option>e/ey/em/eir</option>
+                            <option>fae/faer/faers</option>
+                            <option>ae/aer/aers</option>
+                        </select>
+                    </label>
+        
+                    <hr>
+                        
+                        <label id="collab">Would you like to collab on a future project?</label>
+                        <input type="radio" name="collab" value="yes"/>Yes
+                        <input type="radio" name="collab" value="no"/>No
+                        <input type="radio" name="collab" value="maybe"/>Not Sure
+                        
+                    <hr>
+
+       
+                    <fieldset>What type of project would you like to work on?</fieldset>
+                    <ul>
+                    <li><label for="api">APIs</label><input type="checkbox" name="projects" id="api" value="api"/></li>
+                    
+                    <li><label for="front-end">Front-end Projects</label><input type="checkbox" name="projects" id="front-end"  value="front-end"/></li>
+                    
+                    <li><label for="back-end">Back-end Projects</label><input type="checkbox" name="projects" id="back-end" value="back-end"/></li>
+                    
+                    <li><label for="open-source">Open Source Projects</label><input type="checkbox" name="projects" id="open-source" value="open-source"/></li>
+                    
+                    <li><label for="blogging">Blogging</label><input type="checkbox" name="projects" id="blogging" value="blogging"/></li>
+                    </ul>
+        
+            
+                    <hr>
+
+        <fieldset id="comments">
+                    <legend id="comments">Additional comments or suggestions? </legend>
+                    <textarea spellcheck="true" rows="10" cols="30" placeholder="I love your dreamy survey! One thing that would make it better would be ..."></textarea>
+        </fieldset>
+
+                    <button id="submit">Submit</button>
+</form>
+   
+</div>
+</body>
+</html>
