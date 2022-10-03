@@ -1,6 +1,10 @@
+/* work on this media query so that on laptops and desktops the nav bar displays on the left side and stays visible */
+
 @media (min-width: 768px) and (max-width: 1169px){
     .navbar{
         display: left;
         visibility: visible;
     }
 }
+
+/* Add cool styling and figure out what documentation needs to be created. */
